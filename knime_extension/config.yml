@@ -1,0 +1,10 @@
+org.ethz.networks: # {group_id}.{name} from the knime.yml
+  src: /Users/ropka/Thesis/knime_extension # Local path to folder containing the extension files
+  conda_env_path: /opt/homebrew/Caskroom/miniconda/base/envs/network-knime-env # Path to the local installed Python environment to use
+  debug_mode: true # Optional line, if set to true, it will always use the latest changes of execute/configure, when that method is used within the KNIME Analytics Platform
+
+#   # Configurations in this file are only for development purposes. Would recommend to be added in .gitignore
+# org.knime.demo_python: # {group_id}.{name} from the knime.yml
+#   src: C:\Users\Ali.Marvi\OneDrive - KNIME AG\Documents\Workshop-11-Oct-2024\DemoExtension2024 # Local path to folder containing the extension files
+#   conda_env_path: C:\Program Files\KNIME\bundling\envs\org_knime_pythonscripting # Path to the local installed Python environment to use
+#   debug_mode: true # Optional line, if set to true, it will always use the latest changes of execute/configure, when that method is used within the KNIME Analytics Platform

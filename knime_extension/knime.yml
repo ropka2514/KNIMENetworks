@@ -1,0 +1,10 @@
+name: networks # Will be concatenated with the group_id to an ID
+author: Karl Robert Kristenprun
+description: Network Analysis Extension # Human readable bundle name / description
+long_description: Pure-Python extension for Network Analysis.
+group_id: org.ethz # Group ID for the extension
+version: 0.1.0 # Version of this Python node extension
+vendor: KNIME AG, Zurich, Switzerland
+license_file: LICENSE.TXT # Best practice: put your LICENSE.TXT next to the knime.yml; otherwise you would need to change to path/to/LICENSE.txt
+extension_module: src/networks_ext # The .py Python module containing the nodes of your extension
+env_yml_path: knime_env.yml # this file is needed to create the dedicated conda environment upon installation in KNIME
