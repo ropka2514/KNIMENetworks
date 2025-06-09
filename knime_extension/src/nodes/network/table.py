@@ -1,18 +1,19 @@
 import knime.extension as knext
 
 import networks_ext
-from util.port_types import (
+from util.port_objects import (
     NetworkPortObject,
     NetworkPortObjectSpec,
+)
+from util.port_types import (
     network_port_type,
 )
-
 
 @knext.node(
     name="Network to Table",
     node_type=knext.NodeType.MANIPULATOR,
     category=networks_ext.main_category,
-    icon_path="icons/icon-missing.png",
+    icon_path="icons/to-table.png",
 )
 @knext.input_port(
     name="Input Network",
@@ -29,12 +30,9 @@ class NetworkTableNode:
         configure_context: knext.ConfigurationContext,
         input_schema: NetworkPortObjectSpec,
     ) -> knext.Schema:
-        # ktype1 = knext.string()
-        # ktype2 = input_schema.weight_column.ktype
-        # return knext.Schema([ktype1,ktype1, ktype2],[input_schema.source_label, input_schema.target_label, input_schema.weight_label])
         return None
 
-    def execute(self, context, input):
+    def execute(self, context, input: NetworkPortObject) -> knext.Table:
         network = input.get_network()
 
-        return network
+        return knext.Table.from_pandas(network)

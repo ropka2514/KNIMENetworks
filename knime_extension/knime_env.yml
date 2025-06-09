@@ -7,5 +7,5 @@ dependencies:
   - knime-extension
   - knime-python-base
   - knime-python-scripting
+  - pandas
   - networkx
-  - matplotlib

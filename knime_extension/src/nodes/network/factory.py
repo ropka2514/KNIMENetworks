@@ -1,14 +1,14 @@
 import knime.extension as knext
-import networkx as nx
-import pandas as pd
 
 import networks_ext
-from util.port_types import (
+from util.network_algorithms import create_network
+from util.port_objects import (
     NetworkPortObject,
     NetworkPortObjectSpec,
+)
+from util.port_types import (
     network_port_type,
 )
-
 
 @knext.parameter_group(label="Network Settings")
 class NetworkSettings:
@@ -29,18 +29,22 @@ class NetworkSettings:
         description="Select if the network is two-mode.",
         default_value=False,
     )
-    undirected = knext.BoolParameter(
+    symmetric = knext.BoolParameter(
         label="Symmetric",
-        description="Select if the network is undirected.",
+        description="Select if the network is symmetric.",
+        default_value=False,
+    )
+    irreflexive = knext.BoolParameter(
+        label="Irreflexive",
+        description="Select if the network is irreflexive.",
         default_value=False,
     )
 
-
 @knext.node(
-    name="Network Factory",
+    name="Network Creation",
     node_type=knext.NodeType.MANIPULATOR,
     category=networks_ext.main_category,
-    icon_path="icons/icon-missing.png",
+    icon_path="icons/network-2.png",
 )
 @knext.input_table(
     name="Input Table",
@@ -51,13 +55,13 @@ class NetworkSettings:
     description="Network object created from the edge table.",
     port_type=network_port_type,
 )
+@knext.output_port_group(
+    name="Output Network",
+    description="Network objects created from the edge table.",
+    port_type=network_port_type,
+)
 class NetworkFactoryNode:
     settings = NetworkSettings()
-    # format_graph = knext.BoolParameter(
-    #     label="Pickle the output of the node",
-    #     description="Select if the output should be pickled.",
-    #     default_value=False,
-    # )
 
     def configure(
         self, configure_context: knext.ConfigurationContext, input_schema: knext.Schema
@@ -87,70 +91,28 @@ class NetworkFactoryNode:
             raise knext.InvalidParametersError(
                 "Weight column must be different from target column."
             )
-        # for col in input_schema._columns:
-        #     if col.name == self.weight_label:
-        #         weight_column = col
         return NetworkPortObjectSpec(
             two_mode=self.settings.two_mode,
-            undirected=self.settings.undirected,
-            # format_graph=self.format_graph,
+            symmetric=self.settings.symmetric,
+            irreflexive=self.settings.irreflexive,
             source_label=self.settings.source_label,
             target_label=self.settings.target_label,
             weight_label=self.settings.weight_label,
-            # weight_column=knext.Column(col.ktype, col.name),
         )
 
     def execute(
         self, exec_context: knext.ExecutionContext, input_table: knext.Table
     ) -> NetworkPortObject:
-        df = input_table.to_pandas()
+        settings_dict = {
+            "source_label": self.settings.source_label,
+            "target_label": self.settings.target_label,
+            "weight_label": self.settings.weight_label,
+            "two_mode": self.settings.two_mode,
+            "symmetric": self.settings.symmetric,
+            "irreflexive": self.settings.irreflexive,
+        }
+        return create_network(
+            input_table.to_pandas(),
+            settings_dict
+        )
 
-        source_label = self.settings.source_label
-        target_label = self.settings.target_label
-        weight_label = self.settings.weight_label
-        two_mode = self.settings.two_mode
-        undirected = self.settings.undirected
-        format_graph = False  # self.format_graph
-
-        if format_graph:
-            if two_mode:
-                G = nx.DiGraph() if undirected else nx.Graph()
-                for _, row in df.iterrows():
-                    source_val = row[source_label]
-                    target_val = row[target_label]
-                    G.add_node(source_val, bipartite=0)
-                    G.add_node(target_val, bipartite=1)
-                    if weight_label:
-                        G.add_edge(source_val, target_val, weight=row[weight_label])
-                    else:
-                        G.add_edge(source_val, target_val)
-            else:
-                G = nx.from_pandas_edgelist(
-                    df,
-                    source=source_label,
-                    target=target_label,
-                    edge_attr=weight_label,
-                    create_using=nx.Graph() if not undirected else nx.DiGraph(),
-                )
-            network_obj = NetworkPortObject(self.spec, G)
-        else:
-            if weight_label is None:
-                df[weight_label] = 1
-            edge_df = df[[source_label, target_label, weight_label]]
-
-            network_table = knext.Table.from_pandas(edge_df)
-
-            network_obj = NetworkPortObject(
-                NetworkPortObjectSpec(
-                    two_mode=two_mode,
-                    undirected=undirected,
-                    # format_graph=format_graph,
-                    source_label=source_label,
-                    target_label=target_label,
-                    weight_label=weight_label,
-                    # weight_column=knext.Column(knext.String(), weight_label),
-                ),
-                network_table,
-            )
-
-        return network_obj

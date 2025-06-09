@@ -1,18 +1,15 @@
 import knime_extension as knext
 
-# from nodes.categories import main_category
+import nodes.categories as cat
 
-main_category = knext.category(
-    path="/community",
-    level_id="networks",
-    name="Positional Network Analysis",
-    description="Python Nodes for Networks Analysis",
-    icon="icons/icon.png",
-    locked=False,
-)
+main_category = cat.main_category
 
-import nodes.network_factory
-import nodes.network_transformation
-import nodes.network_table
-import nodes.position_factory
-import nodes.position_dominance
+import nodes.network.table
+import nodes.network.factory
+import nodes.network.transform
+
+import nodes.position.table
+import nodes.position.factory
+import nodes.position.transform
+import nodes.position.dominance
+
