@@ -7,9 +7,12 @@ main_category = cat.main_category
 import nodes.network.table
 import nodes.network.factory
 import nodes.network.transform
+import nodes.network.combine
 
 import nodes.position.table
 import nodes.position.factory
 import nodes.position.transform
 import nodes.position.dominance
+
+import nodes.attribute.factory
 

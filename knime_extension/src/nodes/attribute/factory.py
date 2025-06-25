@@ -13,15 +13,21 @@ from util.port_types import (
 
 class StringHandlingOptions(knext.EnumParameterOptions):
     """
-    Options for handling string column in the network factory.
+    Options for handling string column in the attribute factory.
     """
     # KEEP = "Keep values as is"
-    BINARY = "Convert to binary, existing values will be lost,replace with 1 for existance of attribute"
-    ONE_HOT = "Convert to one-hot encoding, column with binary values for each unique attribute value"
+    BINARY = (
+        "Binary relations", 
+        "Convert to binary, existing values will be lost,replace with 1 for existance of attribute"
+        )
+    ONE_HOT = (
+        "One-hot encoding", 
+        "Convert to one-hot encoding, column with binary values for each unique attribute value"
+        )
 
 
-@knext.parameter_group(label="Network Settings")
-class NetworkSettings:
+@knext.parameter_group(label="Attribute Settings")
+class AttributeSettings:
     node_label = knext.ColumnParameter(
         label="Nodes column",
         description="Select the column with the nodes labels.",
@@ -33,8 +39,8 @@ class NetworkSettings:
     string_handling = knext.EnumParameter(
         label="String Handling",
         description="How to handle string attributes.",
-        options=StringHandlingOptions,
-        default_value=StringHandlingOptions.KEEP,
+        enum=StringHandlingOptions,
+        default_value=StringHandlingOptions.BINARY.name,
     )
 
 
@@ -53,8 +59,8 @@ class NetworkSettings:
     description="Attribute object created from the table.",
     port_type=attribute_port_type,
 )
-class NetworkFactoryNode:
-    settings = NetworkSettings()
+class AttributeFactoryNode:
+    settings = AttributeSettings()
 
     def configure(
         self, configure_context: knext.ConfigurationContext, input_schema: knext.Schema

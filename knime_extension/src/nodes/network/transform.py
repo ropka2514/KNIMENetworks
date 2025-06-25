@@ -10,7 +10,6 @@ from util.port_types import (
     network_port_type,
 )
 
-
 @knext.parameter_group(label="Network Transformation Settings")
 class NetworkTransformationNodeParameters:
     transform_type = knext.EnumParameter(
