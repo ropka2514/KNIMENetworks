@@ -1,0 +1,8 @@
+defaultPythonOption=python3
+eclipse.preferences.version=1
+python2CondaEnvironmentDirectoryPath=no_conda_environment_selected
+python2Path=python
+python3CondaEnvironmentDirectoryPath=no_conda_environment_selected
+python3Path=python3
+pythonEnvironmentType=conda
+serializerId=org.knime.serialization.flatbuffers.column

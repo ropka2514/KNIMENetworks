@@ -45,7 +45,6 @@ def create_positions(input_networks: list[NetworkPortObject], input_attributes: 
 
 
         df_net = input_network.get_network()
-        print(df_net)
         df_net = df_net.copy()
 
         
@@ -80,13 +79,12 @@ def create_positions(input_networks: list[NetworkPortObject], input_attributes: 
         all_pos.append((pos, dims, weight_label))
 
     for input_attribute in input_attributes:
+        node_column = input_attribute.spec.node_column
         weight_label = input_attribute.spec.attribute_column
         df = input_attribute.get_data()
         attr = input_attribute.get_attributes()
-        pos = df.to_dict(orient="index")
+        pos = df.set_index(node_column).to_dict(orient="index")
         all_pos.append((pos, attr, weight_label))
-
-    print(all_pos[0][0])
 
     spec = PositionPortObjectSpec(node_column='node')
 

@@ -12,7 +12,7 @@ from util.port_types import (
 @knext.node(
     name="Network to Table",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.network_category,
     icon_path="icons/to-table.png",
 )
 @knext.input_port(

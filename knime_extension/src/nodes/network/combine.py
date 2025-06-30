@@ -59,7 +59,7 @@ class CombineSettings:
 @knext.node(
     name="Network Merge",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.network_category,
     icon_path="icons/icon-missing.png",
 )
 @knext.input_port_group(
@@ -94,8 +94,7 @@ class CombineNetworksNode:
             symmetric=False,
             two_mode=False,
         )
-
-    def execute(self, input_networks: list[NetworkPortObject]) -> NetworkPortObject:
+    def execute(self, exec_context: knext.ExecutionContext, input_networks: list[NetworkPortObject]) -> NetworkPortObject:
         """
         Combine the input networks based on the selected method and value handling.
         """

@@ -128,8 +128,7 @@ def inverse_transform(networkObj: NetworkPortObject, epsilon) -> NetworkPortObje
     """
     weight_label = networkObj.get_weight_label()
     df = networkObj.get_network()
-    df[weight_label] = 1 / df[weight_label]
-    df[weight_label] = df[weight_label].fillna(0)
+    df[weight_label] = 1 / (df[weight_label] + epsilon)
     networkObj._network = df
     return networkObj
 
@@ -141,7 +140,6 @@ def log_transform(networkObj: NetworkPortObject, base, epsilon) -> NetworkPortOb
     """
     weight_label = networkObj.get_weight_label()
     df = networkObj.get_network()
-    df[weight_label] = np.log(df[weight_label].replace({0: np.nan})) / np.log(base)
-    df[weight_label] = df[weight_label].fillna(0)
+    df[weight_label] = np.log(df[weight_label] + epsilon) / np.log(base)
     networkObj._network = df
     return networkObj

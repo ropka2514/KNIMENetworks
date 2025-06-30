@@ -1,0 +1,48 @@
+{
+  "version" : "5.4.4.v202504301443",
+  "projects" : [ {
+    "name" : "medical_example",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "medical_example"
+    }
+  }, {
+    "name" : "Painters_example",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "Painters_example"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "medical_example",
+    "timeUsed" : "2025-06-29T15:44:40.461108+02:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "medical_example"
+    }
+  }, {
+    "name" : "KNIME_project",
+    "timeUsed" : "2025-06-29T23:06:14.249878+02:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "KNIME_project"
+    }
+  }, {
+    "name" : "Painters_example",
+    "timeUsed" : "2025-06-29T23:26:44.020745+02:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Painters_example"
+    }
+  } ]
+}

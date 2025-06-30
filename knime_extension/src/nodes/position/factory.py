@@ -6,6 +6,8 @@ from util.port_objects import (
     NetworkPortObjectSpec,
     PositionPortObject,
     PositionPortObjectSpec,
+    AttributePortObject,
+    AttributePortObjectSpec,
 )
 from util.port_types import (
     network_port_type,
@@ -38,7 +40,7 @@ class NetworkPositionSettings:
 @knext.node(
     name="Position Creation",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.position_category,
     icon_path="icons/position.png",
 )
 @knext.input_port_group(
@@ -63,15 +65,17 @@ class NetworkPositionNode:
         self,
         configure_context: knext.ConfigurationContext,
         network_schema: list[NetworkPortObjectSpec],
-        attribute_schema: list[PositionPortObjectSpec],
+        attribute_schema: list[AttributePortObjectSpec],
     ) -> PositionPortObjectSpec:
-        source_label = network_schema[0].source_label
+        if not network_schema and not attribute_schema:
+            raise ValueError("At least one input network or attribute is required.")
+        source_label = network_schema[0].source_label if network_schema else attribute_schema[0].node_column
 
         return PositionPortObjectSpec(
             node_column=source_label,
         )
 
     def execute(
-        self, context, input_networks: list[NetworkPortObject], input_attributes: list[PositionPortObject] = []
+        self, context, input_networks: list[NetworkPortObject], input_attributes: list[AttributePortObject] = []
     ) -> PositionPortObject:
         return create_positions(input_networks, input_attributes, self.settings.string_method)

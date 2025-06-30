@@ -26,7 +26,7 @@ class PositionTableNodeParameters:
 @knext.node(
     name="Position to Table",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.position_category,
     icon_path="icons/to-table.png",
 )
 @knext.input_port(
@@ -47,12 +47,12 @@ class PositionTableNode:
         configure_context: knext.ConfigurationContext,
         input_schema: PositionPortObjectSpec,
     ) -> knext.Schema:
+    
         return None
 
     def execute(self, context, input: PositionPortObject) -> knext.Table:
         positions, _ = input.get_uniform_positions()
         df = pd.DataFrame.from_dict(positions, orient='index')
-
         if self.settings.use_default:
             df.fillna(self.settings.default_value, inplace=True)
 

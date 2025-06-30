@@ -58,7 +58,7 @@ def dependency_transform(networkObj: NetworkPortObject) -> NetworkPortObject:
             for u in P[w]:
                 delta[u] += (sigma[u] / sigma[w]) * (1.0 + delta[w])
             if w != s:
-                newGraph.add_edge(s, w, dependency=delta[w])
+                newGraph.add_edge(w, s, dependency=delta[w])
 
     df = nx.to_pandas_edgelist(newGraph, source=source_label, target=target_label)
 

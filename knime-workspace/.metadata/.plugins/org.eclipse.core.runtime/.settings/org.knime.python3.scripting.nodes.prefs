@@ -1,0 +1,5 @@
+bundledCondaEnvPath=org_knime_pythonscripting
+eclipse.preferences.version=1
+python3CondaEnvironmentDirectoryPath=no_conda_environment_selected
+python3Path=python3
+pythonEnvironmentType=bundled

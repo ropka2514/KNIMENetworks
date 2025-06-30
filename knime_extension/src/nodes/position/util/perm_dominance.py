@@ -24,18 +24,18 @@ def permutation_dominance(
             arr_i = np.array(vec_i)
             arr_j = np.array(vec_j)
 
-            if direction == DominanceDirectionOptions.GREATER_THAN:
+            if direction == DominanceDirectionOptions.GREATER_THAN.name:
                 sorted_i = np.sort(arr_i)[::-1]
                 sorted_j = np.sort(arr_j)[::-1]
             else:
                 sorted_i = np.sort(arr_i)
                 sorted_j = np.sort(arr_j)
 
-            if direction == DominanceDirectionOptions.GREATER_THAN:
+            if direction == DominanceDirectionOptions.GREATER_THAN.name:
                 sorted_i, sorted_j = sorted_j, sorted_i
 
             weak = bool(np.all(sorted_i <= sorted_j))
-            if strictness == DominanceStrictOptions.STRICT:
+            if strictness == DominanceStrictOptions.STRICT.name:
                 dominates = weak and bool(np.any(sorted_j < sorted_i))
             else:
                 dominates = weak

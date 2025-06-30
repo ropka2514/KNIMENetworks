@@ -28,7 +28,7 @@ class PositionPortObject(knext.PortObject):
     def __init__(
         self,
         spec: PositionPortObjectSpec,
-        positions: dict[str, dict[str, float]],
+        positions,
     ) -> None:
         super().__init__(spec)
         self._positions = positions
@@ -99,14 +99,15 @@ class AttributePortObject(knext.PortObject):
         self._data = data
 
     def serialize(self) -> bytes:
-        return pickle.dumps(self._attributes)
+        # Serialize both the attributes list and the DataFrame
+        return pickle.dumps((self._attributes, self._data))
 
     @classmethod
     def deserialize(
         cls, spec: AttributePortObjectSpec, data: bytes
     ) -> "AttributePortObject":
-        attributes = pickle.loads(data)
-        return cls(spec, attributes)
+        attributes, df = pickle.loads(data)
+        return cls(spec, attributes, df)
 
     def get_data(self) -> pd.DataFrame:
         return self._data

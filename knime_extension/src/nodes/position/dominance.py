@@ -18,6 +18,8 @@ from util.position_algorithms import (
     coordinate_dominance,
     majorization_dominance,
     lexicographic_dominance,
+    permutation_dominance,
+    neighborhood_dominance,
 )
 
 
@@ -112,7 +114,7 @@ class DominanceParameters:
 @knext.node(
     name="Position Dominances",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.position_category,
     icon_path="icons/dominance.png",
 )
 @knext.input_port(
@@ -167,10 +169,16 @@ class PositionDominanceNode(knext.PythonNode):
                     self.settings.default_value,
                 )
             case DominanceTypeOptions.PERMUTATION.name:
-                raise NotImplementedError(
-                    "Permutation dominance is not yet implemented."
+                return permutation_dominance(
+                    input,
+                    self.settings.dominance_strict,
+                    self.settings.dominance_direction,
+                    self.settings.default_value if self.settings.set_default else None,
                 )
             case DominanceTypeOptions.NEIGHBORHOOD.name:
-                raise NotImplementedError(
-                    "Neighborhood dominance is not yet implemented."
-                )   
+                return neighborhood_dominance(
+                    input,
+                    self.settings.dominance_strict,
+                    self.settings.dominance_direction,
+                    self.settings.default_value if self.settings.set_default else None,
+                )

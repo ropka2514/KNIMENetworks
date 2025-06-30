@@ -1,0 +1,769 @@
+"source","target","dominates"
+"Da Udine","Fr. Penni",1
+"Da Udine","Josepin",1
+"Da Udine","Bellini",1
+"Da Udine","Palma Vecchio",1
+"Da Udine","Caravaggio",1
+"Da Vinci","Da Udine",1
+"Da Vinci","Fr. Penni",1
+"Da Vinci","Guilio Romano",1
+"Da Vinci","Perugino",1
+"Da Vinci","Josepin",1
+"Da Vinci","Testa",1
+"Da Vinci","Bellini",1
+"Da Vinci","Murillo",1
+"Da Vinci","Palma Vecchio",1
+"Da Vinci","Tintoretto",1
+"Da Vinci","Veronese",1
+"Da Vinci","Caravaggio",1
+"Da Vinci","Pourbus",1
+"Da Vinci","Van Leyden",1
+"Da Vinci","Bourdon",1
+"Del Piombo","Da Udine",1
+"Del Piombo","Fr. Penni",1
+"Del Piombo","Perugino",1
+"Del Piombo","Parmigiano",1
+"Del Piombo","Volterra",1
+"Del Piombo","Josepin",1
+"Del Piombo","Testa",1
+"Del Piombo","Bellini",1
+"Del Piombo","Murillo",1
+"Del Piombo","Palma Vecchio",1
+"Del Piombo","Caravaggio",1
+"Del Piombo","Pourbus",1
+"Del Piombo","Van Leyden",1
+"Del Piombo","J. Jordaens",1
+"Del Piombo","Bourdon",1
+"Del Sarto","Da Udine",1
+"Del Sarto","Fr. Penni",1
+"Del Sarto","Perugino",1
+"Del Sarto","F. Zucarro",1
+"Del Sarto","Parmigiano",1
+"Del Sarto","Volterra",1
+"Del Sarto","Josepin",1
+"Del Sarto","L. Jordaens",1
+"Del Sarto","Testa",1
+"Del Sarto","Bellini",1
+"Del Sarto","Murillo",1
+"Del Sarto","Palma Giovane",1
+"Del Sarto","Palma Vecchio",1
+"Del Sarto","Caravaggio",1
+"Del Sarto","Durer",1
+"Del Sarto","Pourbus",1
+"Del Sarto","Van Leyden",1
+"Del Sarto","J. Jordaens",1
+"Del Sarto","Bourdon",1
+"Guilio Romano","Da Udine",1
+"Guilio Romano","Da Vinci",1
+"Guilio Romano","Fr. Penni",1
+"Guilio Romano","Perugino",1
+"Guilio Romano","Josepin",1
+"Guilio Romano","Testa",1
+"Guilio Romano","Bellini",1
+"Guilio Romano","Murillo",1
+"Guilio Romano","Palma Vecchio",1
+"Guilio Romano","Tintoretto",1
+"Guilio Romano","Veronese",1
+"Guilio Romano","Caravaggio",1
+"Guilio Romano","Pourbus",1
+"Guilio Romano","Van Leyden",1
+"Guilio Romano","Bourdon",1
+"Michelangelo","Fr. Penni",1
+"Michelangelo","Bassano",1
+"Michelangelo","Bellini",1
+"Michelangelo","Murillo",1
+"Michelangelo","Palma Vecchio",1
+"Michelangelo","Caravaggio",1
+"Michelangelo","Pourbus",1
+"Michelangelo","Van Leyden",1
+"Michelangelo","Bourdon",1
+"Perino del Vaga","Fr. Penni",1
+"Perino del Vaga","Perugino",1
+"Perino del Vaga","Parmigiano",1
+"Perino del Vaga","Josepin",1
+"Perino del Vaga","Testa",1
+"Perino del Vaga","Bellini",1
+"Perino del Vaga","Murillo",1
+"Perino del Vaga","Palma Vecchio",1
+"Perino del Vaga","Caravaggio",1
+"Perino del Vaga","Pourbus",1
+"Perino del Vaga","Van Leyden",1
+"Raphael","Da Udine",1
+"Raphael","Da Vinci",1
+"Raphael","Del Piombo",1
+"Raphael","Del Sarto",1
+"Raphael","Fr. Penni",1
+"Raphael","Guilio Romano",1
+"Raphael","Michelangelo",1
+"Raphael","Perino del Vaga",1
+"Raphael","Perugino",1
+"Raphael","F. Zucarro",1
+"Raphael","Fr. Salviata",1
+"Raphael","Parmigiano",1
+"Raphael","Primaticcio",1
+"Raphael","T. Zucarro",1
+"Raphael","Volterra",1
+"Raphael","Barocci",1
+"Raphael","Cortona",1
+"Raphael","Josepin",1
+"Raphael","L. Jordaens",1
+"Raphael","Testa",1
+"Raphael","Vanius",1
+"Raphael","Bassano",1
+"Raphael","Bellini",1
+"Raphael","Giorgione",1
+"Raphael","Murillo",1
+"Raphael","Palma Giovane",1
+"Raphael","Palma Vecchio",1
+"Raphael","Pordenone",1
+"Raphael","Tintoretto",1
+"Raphael","Titian",1
+"Raphael","Veronese",1
+"Raphael","Albani",1
+"Raphael","Caravaggio",1
+"Raphael","Corregio",1
+"Raphael","Domenichino",1
+"Raphael","Guercino",1
+"Raphael","Lanfranco",1
+"Raphael","Durer",1
+"Raphael","Holbein",1
+"Raphael","Pourbus",1
+"Raphael","Van Leyden",1
+"Raphael","Diepenbeck",1
+"Raphael","J. Jordaens",1
+"Raphael","Otho Venius",1
+"Raphael","Rembrandt",1
+"Raphael","Teniers",1
+"Raphael","Van Dyck",1
+"Raphael","Bourdon",1
+"Raphael","Le Brun",1
+"Raphael","Le Suer",1
+"Raphael","Poussin",1
+"F. Zucarro","Perugino",1
+"F. Zucarro","Josepin",1
+"F. Zucarro","Durer",1
+"F. Zucarro","Van Leyden",1
+"F. Zucarro","Bourdon",1
+"Fr. Salviata","Fr. Penni",1
+"Fr. Salviata","Perugino",1
+"Fr. Salviata","F. Zucarro",1
+"Fr. Salviata","Parmigiano",1
+"Fr. Salviata","Volterra",1
+"Fr. Salviata","Josepin",1
+"Fr. Salviata","Testa",1
+"Fr. Salviata","Bellini",1
+"Fr. Salviata","Murillo",1
+"Fr. Salviata","Durer",1
+"Fr. Salviata","Pourbus",1
+"Fr. Salviata","Van Leyden",1
+"Fr. Salviata","Bourdon",1
+"Parmigiano","Fr. Penni",1
+"Parmigiano","Perugino",1
+"Parmigiano","Josepin",1
+"Parmigiano","Bellini",1
+"Parmigiano","Murillo",1
+"Parmigiano","Pourbus",1
+"Parmigiano","Van Leyden",1
+"Primaticcio","Fr. Penni",1
+"Primaticcio","Perugino",1
+"Primaticcio","Parmigiano",1
+"Primaticcio","Volterra",1
+"Primaticcio","Barocci",1
+"Primaticcio","Josepin",1
+"Primaticcio","L. Jordaens",1
+"Primaticcio","Testa",1
+"Primaticcio","Bellini",1
+"Primaticcio","Murillo",1
+"Primaticcio","Palma Giovane",1
+"Primaticcio","Albani",1
+"Primaticcio","Lanfranco",1
+"Primaticcio","Pourbus",1
+"Primaticcio","Van Leyden",1
+"Primaticcio","Diepenbeck",1
+"Primaticcio","Bourdon",1
+"T. Zucarro","Perugino",1
+"T. Zucarro","F. Zucarro",1
+"T. Zucarro","Josepin",1
+"T. Zucarro","L. Jordaens",1
+"T. Zucarro","Bellini",1
+"T. Zucarro","Palma Giovane",1
+"T. Zucarro","Lanfranco",1
+"T. Zucarro","Durer",1
+"T. Zucarro","Van Leyden",1
+"T. Zucarro","Diepenbeck",1
+"T. Zucarro","Bourdon",1
+"Volterra","Fr. Penni",1
+"Volterra","Perugino",1
+"Volterra","Josepin",1
+"Volterra","Testa",1
+"Volterra","Bellini",1
+"Volterra","Murillo",1
+"Volterra","Pourbus",1
+"Volterra","Van Leyden",1
+"Volterra","Bourdon",1
+"Barocci","Fr. Penni",1
+"Barocci","Perugino",1
+"Barocci","Parmigiano",1
+"Barocci","Volterra",1
+"Barocci","Josepin",1
+"Barocci","L. Jordaens",1
+"Barocci","Testa",1
+"Barocci","Bellini",1
+"Barocci","Murillo",1
+"Barocci","Palma Giovane",1
+"Barocci","Albani",1
+"Barocci","Lanfranco",1
+"Barocci","Pourbus",1
+"Barocci","Van Leyden",1
+"Barocci","Diepenbeck",1
+"Barocci","Bourdon",1
+"Cortona","Da Udine",1
+"Cortona","Fr. Penni",1
+"Cortona","Perugino",1
+"Cortona","Parmigiano",1
+"Cortona","Volterra",1
+"Cortona","Barocci",1
+"Cortona","Josepin",1
+"Cortona","L. Jordaens",1
+"Cortona","Testa",1
+"Cortona","Bellini",1
+"Cortona","Murillo",1
+"Cortona","Palma Giovane",1
+"Cortona","Palma Vecchio",1
+"Cortona","Albani",1
+"Cortona","Caravaggio",1
+"Cortona","Lanfranco",1
+"Cortona","Pourbus",1
+"Cortona","Van Leyden",1
+"Cortona","Diepenbeck",1
+"Cortona","J. Jordaens",1
+"Cortona","Teniers",1
+"Cortona","Bourdon",1
+"L. Jordaens","Perugino",1
+"L. Jordaens","Josepin",1
+"L. Jordaens","Van Leyden",1
+"L. Jordaens","Bourdon",1
+"Testa","Fr. Penni",1
+"Testa","Bellini",1
+"Vanius","Fr. Penni",1
+"Vanius","Perugino",1
+"Vanius","F. Zucarro",1
+"Vanius","Fr. Salviata",1
+"Vanius","Parmigiano",1
+"Vanius","Primaticcio",1
+"Vanius","T. Zucarro",1
+"Vanius","Volterra",1
+"Vanius","Barocci",1
+"Vanius","Josepin",1
+"Vanius","L. Jordaens",1
+"Vanius","Testa",1
+"Vanius","Bellini",1
+"Vanius","Murillo",1
+"Vanius","Palma Giovane",1
+"Vanius","Albani",1
+"Vanius","Corregio",1
+"Vanius","Lanfranco",1
+"Vanius","Durer",1
+"Vanius","Pourbus",1
+"Vanius","Van Leyden",1
+"Vanius","Diepenbeck",1
+"Vanius","Otho Venius",1
+"Vanius","Teniers",1
+"Vanius","Bourdon",1
+"Bassano","Fr. Penni",1
+"Bassano","Bellini",1
+"Bassano","Palma Vecchio",1
+"Bassano","Caravaggio",1
+"Giorgione","Fr. Penni",1
+"Giorgione","Michelangelo",1
+"Giorgione","Bassano",1
+"Giorgione","Bellini",1
+"Giorgione","Murillo",1
+"Giorgione","Palma Vecchio",1
+"Giorgione","Caravaggio",1
+"Giorgione","Pourbus",1
+"Giorgione","Van Leyden",1
+"Giorgione","Bourdon",1
+"Murillo","Fr. Penni",1
+"Murillo","Bellini",1
+"Murillo","Pourbus",1
+"Murillo","Van Leyden",1
+"Palma Giovane","Perugino",1
+"Palma Giovane","Josepin",1
+"Palma Giovane","L. Jordaens",1
+"Palma Giovane","Bellini",1
+"Palma Giovane","Van Leyden",1
+"Palma Giovane","Bourdon",1
+"Palma Vecchio","Bellini",1
+"Pordenone","Da Udine",1
+"Pordenone","Fr. Penni",1
+"Pordenone","Michelangelo",1
+"Pordenone","Perugino",1
+"Pordenone","Volterra",1
+"Pordenone","Josepin",1
+"Pordenone","Testa",1
+"Pordenone","Bassano",1
+"Pordenone","Bellini",1
+"Pordenone","Murillo",1
+"Pordenone","Palma Vecchio",1
+"Pordenone","Caravaggio",1
+"Pordenone","Pourbus",1
+"Pordenone","Van Leyden",1
+"Pordenone","Bourdon",1
+"Tintoretto","Da Udine",1
+"Tintoretto","Da Vinci",1
+"Tintoretto","Fr. Penni",1
+"Tintoretto","Guilio Romano",1
+"Tintoretto","Perugino",1
+"Tintoretto","Josepin",1
+"Tintoretto","Testa",1
+"Tintoretto","Bellini",1
+"Tintoretto","Murillo",1
+"Tintoretto","Palma Vecchio",1
+"Tintoretto","Veronese",1
+"Tintoretto","Caravaggio",1
+"Tintoretto","Pourbus",1
+"Tintoretto","Van Leyden",1
+"Tintoretto","Bourdon",1
+"Titian","Da Udine",1
+"Titian","Fr. Penni",1
+"Titian","Michelangelo",1
+"Titian","Perino del Vaga",1
+"Titian","Perugino",1
+"Titian","Parmigiano",1
+"Titian","Volterra",1
+"Titian","Barocci",1
+"Titian","Cortona",1
+"Titian","Josepin",1
+"Titian","L. Jordaens",1
+"Titian","Testa",1
+"Titian","Bassano",1
+"Titian","Bellini",1
+"Titian","Giorgione",1
+"Titian","Murillo",1
+"Titian","Palma Giovane",1
+"Titian","Palma Vecchio",1
+"Titian","Pordenone",1
+"Titian","Veronese",1
+"Titian","Albani",1
+"Titian","Caravaggio",1
+"Titian","Guercino",1
+"Titian","Lanfranco",1
+"Titian","Pourbus",1
+"Titian","Van Leyden",1
+"Titian","Diepenbeck",1
+"Titian","J. Jordaens",1
+"Titian","Rembrandt",1
+"Titian","Teniers",1
+"Titian","Bourdon",1
+"Veronese","Da Udine",1
+"Veronese","Fr. Penni",1
+"Veronese","Josepin",1
+"Veronese","Testa",1
+"Veronese","Bellini",1
+"Veronese","Palma Vecchio",1
+"Veronese","Caravaggio",1
+"Albani","Perugino",1
+"Albani","Josepin",1
+"Albani","L. Jordaens",1
+"Albani","Bellini",1
+"Albani","Palma Giovane",1
+"Albani","Lanfranco",1
+"Albani","Van Leyden",1
+"Albani","Diepenbeck",1
+"Albani","Bourdon",1
+"Caravaggio","Bellini",1
+"Caravaggio","Palma Vecchio",1
+"Corregio","Fr. Penni",1
+"Corregio","Perugino",1
+"Corregio","F. Zucarro",1
+"Corregio","Fr. Salviata",1
+"Corregio","Parmigiano",1
+"Corregio","T. Zucarro",1
+"Corregio","Volterra",1
+"Corregio","Josepin",1
+"Corregio","L. Jordaens",1
+"Corregio","Testa",1
+"Corregio","Bellini",1
+"Corregio","Murillo",1
+"Corregio","Palma Giovane",1
+"Corregio","Lanfranco",1
+"Corregio","Durer",1
+"Corregio","Pourbus",1
+"Corregio","Van Leyden",1
+"Corregio","Diepenbeck",1
+"Corregio","Otho Venius",1
+"Corregio","Teniers",1
+"Corregio","Bourdon",1
+"Domenichino","Da Udine",1
+"Domenichino","Da Vinci",1
+"Domenichino","Del Piombo",1
+"Domenichino","Del Sarto",1
+"Domenichino","Fr. Penni",1
+"Domenichino","Guilio Romano",1
+"Domenichino","Michelangelo",1
+"Domenichino","Perino del Vaga",1
+"Domenichino","Perugino",1
+"Domenichino","F. Zucarro",1
+"Domenichino","Fr. Salviata",1
+"Domenichino","Parmigiano",1
+"Domenichino","Primaticcio",1
+"Domenichino","T. Zucarro",1
+"Domenichino","Volterra",1
+"Domenichino","Barocci",1
+"Domenichino","Cortona",1
+"Domenichino","Josepin",1
+"Domenichino","L. Jordaens",1
+"Domenichino","Testa",1
+"Domenichino","Bassano",1
+"Domenichino","Bellini",1
+"Domenichino","Murillo",1
+"Domenichino","Palma Giovane",1
+"Domenichino","Palma Vecchio",1
+"Domenichino","Pordenone",1
+"Domenichino","Tintoretto",1
+"Domenichino","Veronese",1
+"Domenichino","Albani",1
+"Domenichino","Caravaggio",1
+"Domenichino","Lanfranco",1
+"Domenichino","Durer",1
+"Domenichino","Holbein",1
+"Domenichino","Pourbus",1
+"Domenichino","Van Leyden",1
+"Domenichino","Diepenbeck",1
+"Domenichino","J. Jordaens",1
+"Domenichino","Rembrandt",1
+"Domenichino","Teniers",1
+"Domenichino","Bourdon",1
+"Domenichino","Le Suer",1
+"Domenichino","Poussin",1
+"Guercino","Da Udine",1
+"Guercino","Fr. Penni",1
+"Guercino","Michelangelo",1
+"Guercino","Perugino",1
+"Guercino","Josepin",1
+"Guercino","Bassano",1
+"Guercino","Bellini",1
+"Guercino","Giorgione",1
+"Guercino","Murillo",1
+"Guercino","Palma Vecchio",1
+"Guercino","Caravaggio",1
+"Guercino","Pourbus",1
+"Guercino","Van Leyden",1
+"Guercino","Bourdon",1
+"Lanfranco","Perugino",1
+"Lanfranco","Josepin",1
+"Lanfranco","Bellini",1
+"Lanfranco","Van Leyden",1
+"Lanfranco","Bourdon",1
+"The Carraci","Da Udine",1
+"The Carraci","Del Piombo",1
+"The Carraci","Del Sarto",1
+"The Carraci","Fr. Penni",1
+"The Carraci","Michelangelo",1
+"The Carraci","Perino del Vaga",1
+"The Carraci","Perugino",1
+"The Carraci","F. Zucarro",1
+"The Carraci","Fr. Salviata",1
+"The Carraci","Parmigiano",1
+"The Carraci","Primaticcio",1
+"The Carraci","T. Zucarro",1
+"The Carraci","Volterra",1
+"The Carraci","Barocci",1
+"The Carraci","Cortona",1
+"The Carraci","Josepin",1
+"The Carraci","L. Jordaens",1
+"The Carraci","Testa",1
+"The Carraci","Vanius",1
+"The Carraci","Bassano",1
+"The Carraci","Bellini",1
+"The Carraci","Murillo",1
+"The Carraci","Palma Giovane",1
+"The Carraci","Palma Vecchio",1
+"The Carraci","Pordenone",1
+"The Carraci","Veronese",1
+"The Carraci","Albani",1
+"The Carraci","Caravaggio",1
+"The Carraci","Corregio",1
+"The Carraci","Lanfranco",1
+"The Carraci","Durer",1
+"The Carraci","Holbein",1
+"The Carraci","Pourbus",1
+"The Carraci","Van Leyden",1
+"The Carraci","Diepenbeck",1
+"The Carraci","J. Jordaens",1
+"The Carraci","Otho Venius",1
+"The Carraci","Rembrandt",1
+"The Carraci","Teniers",1
+"The Carraci","Van Dyck",1
+"The Carraci","Bourdon",1
+"Durer","Josepin",1
+"Durer","Van Leyden",1
+"Durer","Bourdon",1
+"Holbein","Da Udine",1
+"Holbein","Del Piombo",1
+"Holbein","Del Sarto",1
+"Holbein","Fr. Penni",1
+"Holbein","Perugino",1
+"Holbein","F. Zucarro",1
+"Holbein","Fr. Salviata",1
+"Holbein","Parmigiano",1
+"Holbein","T. Zucarro",1
+"Holbein","Volterra",1
+"Holbein","Josepin",1
+"Holbein","L. Jordaens",1
+"Holbein","Testa",1
+"Holbein","Bellini",1
+"Holbein","Murillo",1
+"Holbein","Palma Giovane",1
+"Holbein","Palma Vecchio",1
+"Holbein","Caravaggio",1
+"Holbein","Lanfranco",1
+"Holbein","Durer",1
+"Holbein","Pourbus",1
+"Holbein","Van Leyden",1
+"Holbein","Diepenbeck",1
+"Holbein","J. Jordaens",1
+"Holbein","Bourdon",1
+"Pourbus","Bellini",1
+"Pourbus","Van Leyden",1
+"Diepenbeck","Perugino",1
+"Diepenbeck","Josepin",1
+"Diepenbeck","Bellini",1
+"Diepenbeck","Van Leyden",1
+"Diepenbeck","Bourdon",1
+"J. Jordaens","Da Udine",1
+"J. Jordaens","Fr. Penni",1
+"J. Jordaens","Perugino",1
+"J. Jordaens","Parmigiano",1
+"J. Jordaens","Josepin",1
+"J. Jordaens","Bellini",1
+"J. Jordaens","Murillo",1
+"J. Jordaens","Palma Vecchio",1
+"J. Jordaens","Caravaggio",1
+"J. Jordaens","Pourbus",1
+"J. Jordaens","Van Leyden",1
+"J. Jordaens","Bourdon",1
+"Otho Venius","Perugino",1
+"Otho Venius","F. Zucarro",1
+"Otho Venius","T. Zucarro",1
+"Otho Venius","Josepin",1
+"Otho Venius","L. Jordaens",1
+"Otho Venius","Bellini",1
+"Otho Venius","Palma Giovane",1
+"Otho Venius","Lanfranco",1
+"Otho Venius","Durer",1
+"Otho Venius","Van Leyden",1
+"Otho Venius","Diepenbeck",1
+"Otho Venius","Bourdon",1
+"Rembrandt","Da Udine",1
+"Rembrandt","Fr. Penni",1
+"Rembrandt","Michelangelo",1
+"Rembrandt","Perino del Vaga",1
+"Rembrandt","Perugino",1
+"Rembrandt","Parmigiano",1
+"Rembrandt","Volterra",1
+"Rembrandt","Barocci",1
+"Rembrandt","Cortona",1
+"Rembrandt","Josepin",1
+"Rembrandt","L. Jordaens",1
+"Rembrandt","Testa",1
+"Rembrandt","Bassano",1
+"Rembrandt","Bellini",1
+"Rembrandt","Murillo",1
+"Rembrandt","Palma Giovane",1
+"Rembrandt","Palma Vecchio",1
+"Rembrandt","Pordenone",1
+"Rembrandt","Veronese",1
+"Rembrandt","Albani",1
+"Rembrandt","Caravaggio",1
+"Rembrandt","Lanfranco",1
+"Rembrandt","Pourbus",1
+"Rembrandt","Van Leyden",1
+"Rembrandt","Diepenbeck",1
+"Rembrandt","J. Jordaens",1
+"Rembrandt","Teniers",1
+"Rembrandt","Bourdon",1
+"Rubens","Da Udine",1
+"Rubens","Da Vinci",1
+"Rubens","Del Piombo",1
+"Rubens","Del Sarto",1
+"Rubens","Fr. Penni",1
+"Rubens","Guilio Romano",1
+"Rubens","Michelangelo",1
+"Rubens","Perino del Vaga",1
+"Rubens","Perugino",1
+"Rubens","F. Zucarro",1
+"Rubens","Fr. Salviata",1
+"Rubens","Parmigiano",1
+"Rubens","Primaticcio",1
+"Rubens","T. Zucarro",1
+"Rubens","Volterra",1
+"Rubens","Barocci",1
+"Rubens","Cortona",1
+"Rubens","Josepin",1
+"Rubens","L. Jordaens",1
+"Rubens","Testa",1
+"Rubens","Vanius",1
+"Rubens","Bassano",1
+"Rubens","Bellini",1
+"Rubens","Giorgione",1
+"Rubens","Murillo",1
+"Rubens","Palma Giovane",1
+"Rubens","Palma Vecchio",1
+"Rubens","Pordenone",1
+"Rubens","Tintoretto",1
+"Rubens","Titian",1
+"Rubens","Veronese",1
+"Rubens","Albani",1
+"Rubens","Caravaggio",1
+"Rubens","Corregio",1
+"Rubens","Domenichino",1
+"Rubens","Guercino",1
+"Rubens","Lanfranco",1
+"Rubens","The Carraci",1
+"Rubens","Durer",1
+"Rubens","Holbein",1
+"Rubens","Pourbus",1
+"Rubens","Van Leyden",1
+"Rubens","Diepenbeck",1
+"Rubens","J. Jordaens",1
+"Rubens","Otho Venius",1
+"Rubens","Rembrandt",1
+"Rubens","Teniers",1
+"Rubens","Van Dyck",1
+"Rubens","Bourdon",1
+"Rubens","Le Brun",1
+"Rubens","Le Suer",1
+"Rubens","Poussin",1
+"Teniers","Fr. Penni",1
+"Teniers","Perugino",1
+"Teniers","Parmigiano",1
+"Teniers","Volterra",1
+"Teniers","Josepin",1
+"Teniers","L. Jordaens",1
+"Teniers","Testa",1
+"Teniers","Bellini",1
+"Teniers","Murillo",1
+"Teniers","Palma Giovane",1
+"Teniers","Lanfranco",1
+"Teniers","Pourbus",1
+"Teniers","Van Leyden",1
+"Teniers","Diepenbeck",1
+"Teniers","Bourdon",1
+"Van Dyck","Da Udine",1
+"Van Dyck","Del Piombo",1
+"Van Dyck","Del Sarto",1
+"Van Dyck","Fr. Penni",1
+"Van Dyck","Michelangelo",1
+"Van Dyck","Perino del Vaga",1
+"Van Dyck","Perugino",1
+"Van Dyck","F. Zucarro",1
+"Van Dyck","Fr. Salviata",1
+"Van Dyck","Parmigiano",1
+"Van Dyck","Primaticcio",1
+"Van Dyck","T. Zucarro",1
+"Van Dyck","Volterra",1
+"Van Dyck","Barocci",1
+"Van Dyck","Cortona",1
+"Van Dyck","Josepin",1
+"Van Dyck","L. Jordaens",1
+"Van Dyck","Testa",1
+"Van Dyck","Bassano",1
+"Van Dyck","Bellini",1
+"Van Dyck","Murillo",1
+"Van Dyck","Palma Giovane",1
+"Van Dyck","Palma Vecchio",1
+"Van Dyck","Pordenone",1
+"Van Dyck","Veronese",1
+"Van Dyck","Albani",1
+"Van Dyck","Caravaggio",1
+"Van Dyck","Lanfranco",1
+"Van Dyck","Durer",1
+"Van Dyck","Holbein",1
+"Van Dyck","Pourbus",1
+"Van Dyck","Van Leyden",1
+"Van Dyck","Diepenbeck",1
+"Van Dyck","J. Jordaens",1
+"Van Dyck","Otho Venius",1
+"Van Dyck","Rembrandt",1
+"Van Dyck","Teniers",1
+"Van Dyck","Bourdon",1
+"Bourdon","Van Leyden",1
+"Le Brun","Da Udine",1
+"Le Brun","Da Vinci",1
+"Le Brun","Del Piombo",1
+"Le Brun","Del Sarto",1
+"Le Brun","Fr. Penni",1
+"Le Brun","Guilio Romano",1
+"Le Brun","Perino del Vaga",1
+"Le Brun","Perugino",1
+"Le Brun","F. Zucarro",1
+"Le Brun","Fr. Salviata",1
+"Le Brun","Parmigiano",1
+"Le Brun","Primaticcio",1
+"Le Brun","Volterra",1
+"Le Brun","Barocci",1
+"Le Brun","Cortona",1
+"Le Brun","Josepin",1
+"Le Brun","L. Jordaens",1
+"Le Brun","Testa",1
+"Le Brun","Bellini",1
+"Le Brun","Murillo",1
+"Le Brun","Palma Giovane",1
+"Le Brun","Palma Vecchio",1
+"Le Brun","Tintoretto",1
+"Le Brun","Veronese",1
+"Le Brun","Albani",1
+"Le Brun","Caravaggio",1
+"Le Brun","Lanfranco",1
+"Le Brun","Durer",1
+"Le Brun","Pourbus",1
+"Le Brun","Van Leyden",1
+"Le Brun","Diepenbeck",1
+"Le Brun","J. Jordaens",1
+"Le Brun","Teniers",1
+"Le Brun","Bourdon",1
+"Le Brun","Le Suer",1
+"Le Suer","Fr. Penni",1
+"Le Suer","Perugino",1
+"Le Suer","Josepin",1
+"Le Suer","Testa",1
+"Le Suer","Bellini",1
+"Le Suer","Murillo",1
+"Le Suer","Pourbus",1
+"Le Suer","Van Leyden",1
+"Le Suer","Bourdon",1
+"Poussin","Da Udine",1
+"Poussin","Da Vinci",1
+"Poussin","Fr. Penni",1
+"Poussin","Guilio Romano",1
+"Poussin","Michelangelo",1
+"Poussin","Perino del Vaga",1
+"Poussin","Perugino",1
+"Poussin","Parmigiano",1
+"Poussin","Volterra",1
+"Poussin","Barocci",1
+"Poussin","Cortona",1
+"Poussin","Josepin",1
+"Poussin","L. Jordaens",1
+"Poussin","Testa",1
+"Poussin","Bassano",1
+"Poussin","Bellini",1
+"Poussin","Murillo",1
+"Poussin","Palma Giovane",1
+"Poussin","Palma Vecchio",1
+"Poussin","Pordenone",1
+"Poussin","Tintoretto",1
+"Poussin","Veronese",1
+"Poussin","Albani",1
+"Poussin","Caravaggio",1
+"Poussin","Lanfranco",1
+"Poussin","Pourbus",1
+"Poussin","Van Leyden",1
+"Poussin","Diepenbeck",1
+"Poussin","J. Jordaens",1
+"Poussin","Rembrandt",1
+"Poussin","Teniers",1
+"Poussin","Bourdon",1
+"Poussin","Le Suer",1

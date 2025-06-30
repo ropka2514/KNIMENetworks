@@ -212,7 +212,7 @@ class NetworkTransformationNodeParameters:
                         algo.RescaleOptions.RANDOM_WALK.name,
                         algo.RescaleOptions.DEGREE_SUM.name,
                         algo.RescaleOptions.DEGREE_PROD.name,
-                        algo.RescaleOptions.SYMMETRIC.name,
+                        # algo.RescaleOptions.SYMMETRIC.name,
                     ],
                 ),
             ),
@@ -266,7 +266,7 @@ class NetworkTransformationNodeParameters:
 @knext.node(
     name="Network Transformation",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.network_category,
     icon_path="icons/transform.png",
 )
 @knext.input_port(

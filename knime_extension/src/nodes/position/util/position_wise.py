@@ -18,23 +18,23 @@ def inverse_transform(
     Returns:
         new_positions: dict[node_id][dim_name] = float
     """
-    positions, all_dims = input.get_uniform_positions()
+    positions = input.get_positions()
 
-    for node_id, coord_map in positions.items():
-        if default_value is not None:
-            for dim in all_dims:
-                value = coord_map.get(dim, default_value)
-                positions[node_id][dim] = 1.0 / (value + epsilon)
-        else:
-            for value in coord_map.values():
-                positions[node_id][dim] = 1.0 / (value + epsilon)
+    for (pos, all_dims, w) in positions:
+        for node_id, coord_map in pos.items():
+            if default_value is not None:
+                for dim in all_dims:
+                    value = coord_map.get(dim, default_value)
+                    coord_map[dim] = 1.0 / (value + epsilon)
+            else:
+                for dim, value in coord_map.items():
+                    coord_map[dim] = 1.0 / (value + epsilon)
 
     return PositionPortObject(
         spec=PositionPortObjectSpec(
             node_column=input.spec.node_column,
         ),
         positions=positions,
-        dimensions=all_dims,
     )
 
 
@@ -46,23 +46,24 @@ def log_transform(input: PositionPortObject, default_value=None) -> PositionPort
     Returns:
         new_positions: dict[node_id]['log_sum'] = float
     """
-    positions, all_dims = input.get_uniform_positions()
+    positions = input.get_positions()
 
-    for node_id, coord_map in positions.items():
-        if default_value is not None:
-            for dim in all_dims:
-                value = coord_map.get(dim, default_value)
-                positions[node_id][dim] = math.log(value + 1.0)
-        else:
-            for dim, value in coord_map.items():
-                positions[node_id][dim] = math.log(value + 1.0)
+    for pos,dim,w in positions:
+        # apply log transformation to each coordinate
+        for node_id, coord_map in pos.items():
+            if default_value is not None:
+                for dim in dim:
+                    value = coord_map.get(dim, default_value)
+                    coord_map[dim] = math.log(value + 1.0)
+            else:
+                for dim, value in coord_map.items():
+                    coord_map[dim] = math.log(value + 1.0)
 
     return PositionPortObject(
         spec=PositionPortObjectSpec(
             node_column=input.spec.node_column,
         ),
         positions=positions,
-        dimensions=all_dims,
     )
 
 

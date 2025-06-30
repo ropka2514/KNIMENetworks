@@ -43,7 +43,7 @@ class NetworkSettings:
 @knext.node(
     name="Network Creation",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.network_category,
     icon_path="icons/network-2.png",
 )
 @knext.input_table(

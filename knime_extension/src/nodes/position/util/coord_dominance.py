@@ -28,27 +28,34 @@ def coordinate_dominance(
             if u == v:
                 continue
             all_true = True
-            strictly_less = False
+            strictly = False
             for dim in dimensions:
                 uval = uvec.get(dim, default_value)
                 vval = vvec.get(dim, default_value)
-                if uval is None or vval is None:
+                if uval is None and vval is None:
                     continue
-                if DominanceDirectionOptions.LESS_THAN == direction:
+                if uval is None:
+                    all_true = False
+                    break
+                if vval is None:
+                    strictly = True
+                    continue
+
+                if DominanceDirectionOptions.LESS_THAN.name == direction:
                     if vval < uval:
                         all_true = False
                         break
                     if uval < vval:
-                        strictly_less = True
-                elif DominanceDirectionOptions.GREATER_THAN == direction:
+                        strictly = True
+                elif DominanceDirectionOptions.GREATER_THAN.name == direction:
                     if vval > uval:
                         all_true = False
                         break
                     if uval > vval:
-                        strictly_less = True
+                        strictly = True
             if not all_true:
                 continue
-            if dominance_strict == DominanceStrictOptions.STRICT and not strictly_less:
+            if dominance_strict == DominanceStrictOptions.STRICT.name and not strictly:
                 continue
             edges.append((u, v, 1))
 

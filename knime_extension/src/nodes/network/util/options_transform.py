@@ -44,7 +44,7 @@ class RescaleOptions(knext.EnumParameterOptions):
         "Random Walk",
         "Rescale based on random walk probabilities.",
     )
-    SYMMETRIC = ("Symmetric", "Normalize the network symmetrically.")
+    # SYMMETRIC = ("Symmetric", "Normalize the network symmetrically.")
     DEGREE_SUM = ("Degree Sum", "Normalize based on the degree sum.")
     DEGREE_PROD = ("Degree Product", "Normalize based on the degree product.")
     # ZSCORE = ("Z-Score", "Rescale using Z-Score normalization.")

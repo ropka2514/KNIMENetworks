@@ -1,0 +1,10 @@
+/Users/ropka/Thesis/results_workflows/python_between.csv
+/Users/ropka/Thesis/results_workflows/pyhton_between.csv
+/Users/ropka/Thesis/results_workflows/medical_between_workflow.csv
+/Users/ropka/Thesis/results_workflows/medical_degree_workflow.csv
+/Users/ropka/Thesis/results_workflows/python_degree.csv
+/Users/ropka/Thesis/Physicians-Innovation_dataset/Dataset/CKM-Physicians-Innovation_multiplex.txt
+/Users/ropka/Thesis/medical_between_workflow.csv
+/Users/ropka/Thesis/datasets/CKM-friend.csv
+/Users/ropka/Thesis/datasets/CKM-discussion.csv
+/Users/ropka/Thesis/datasets/CKM-advice.csv

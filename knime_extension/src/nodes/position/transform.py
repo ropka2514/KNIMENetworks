@@ -41,11 +41,11 @@ class PositionTransformOptions(knext.EnumParameterOptions):
     )
 
 
-@knext.parameter_group(label="Network Transformation Settings")
+@knext.parameter_group(label="Position Transformation Settings")
 class PositionTransformationNodeParameters:
     transform_type = knext.EnumParameter(
         label="Transformation type",
-        description="Select the type of transformation to perform on the node positions.\nAfter selection, reopen the configuration window to set transformation parameters.",
+        description="Select the type of transformation to perform on the node positions.",
         enum=PositionTransformOptions,
         default_value=PositionTransformOptions.SUM.name,
     )
@@ -64,7 +64,7 @@ class PositionTransformationNodeParameters:
 @knext.node(
     name="Position Transformation",
     node_type=knext.NodeType.MANIPULATOR,
-    category=networks_ext.main_category,
+    category=networks_ext.position_category,
     icon_path="icons/transform.png",
 )
 @knext.input_port(

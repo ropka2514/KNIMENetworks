@@ -68,10 +68,10 @@ def bin_or_symmetrize_transform(networkObj: NetworkPortObject) -> NetworkPortObj
     """
     src = networkObj.get_source_label()
     tgt = networkObj.get_target_label()
-    df = networkObj.get_network()[[src, tgt]].drop_duplicates().copy()
-    df['pair'] = df.apply(lambda r: tuple(sorted((r[src], r[tgt]))), axis=1)
-    df = df.drop_duplicates('pair')
-    pairs = pd.DataFrame(df['pair'].tolist(), columns=[src, tgt])
+    df = networkObj.get_network()[[src, tgt]].copy()
+    edges = set(zip(df[src], df[tgt]))
+    edges.update([(target, source) for source, target in edges])
+    pairs = pd.DataFrame(list(edges), columns=[src, tgt])
     pairs[networkObj.get_weight_label()] = 1
     return NetworkPortObject(networkObj.spec, pairs)
 

@@ -44,8 +44,7 @@ def min_transform(input: PositionPortObject, default_value=None) -> PositionPort
     Returns:
         new_positions: dict[node_id]['min_coordinate'] = float
     """
-    positions = input.get_positions()
-    all_dims = input.get_dimensions()
+    positions, all_dims = input.get_uniform_positions()
     new_positions = {}
     for node_id, coord_map in positions.items():
         if default_value is not None:
